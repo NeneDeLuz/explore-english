@@ -1,0 +1,882 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  font-family: 'Playfair Display', serif;         h2
+    font-family: 'Playfair Display SC', serif;
+    font-family: "EB Garamond", serif;              p
+*/
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: #edf6e5;
+}
+/*Encabezado*/
+
+.encabezado {
+  background-color: #f29191;
+  height: auto;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: encabezado;
+}
+
+.encabezado div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.encabezado a img {
+  width: 80px;
+  margin-left: 25px;
+}
+
+.encabezado h1 {
+  font-family: "Playfair Display", serif;
+  color: white;
+}
+
+.encabezado nav {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.encabezado nav ul {
+  list-style: none;
+  font-size: 0;
+  display: flex;
+}
+
+.encabezado nav ul li {
+  width: 20%;
+  position: relative;
+  margin: 15px;
+}
+
+.encabezado nav ul li a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-size: 20px;
+}
+
+.encabezado nav ul ul {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: #f29191;
+  border-radius: 20px;
+}
+
+.encabezado nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+.encabezado ul li:hover ul {
+  display: block;
+}
+
+/*SECCION UNO*/
+
+.seccion__uno {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/fondofrase.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  grid-area: seccion-uno;
+}
+
+.seccion__uno h2 {
+  display: inline-block;
+  color: white;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  align-self: center;
+  justify-content: center;
+}
+
+.seccion__uno h3 {
+  color: white;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  align-self: flex-end;
+  margin-bottom: 175px;
+  padding-right: 50px;
+}
+/*SECCION DOS*/
+
+.seccion__dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: seccion-dos;
+}
+
+.seccion__dos img {
+  width: 400px;
+  margin: 45px;
+}
+
+.seccion__dos div {
+  text-align: center;
+  margin-right: 25px;
+}
+
+.seccion__dos div h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+}
+
+.seccion__dos div p {
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  text-align: justify;
+}
+
+/*SECCION TRES*/
+.div-servicios {
+  grid-area: seccion-tres;
+}
+#div-servicios h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  margin: 20px;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.servicios div {
+  width: 300px;
+  height: 500px;
+  border: solid 2px #709b98;
+  padding: 5px;
+  text-align: center;
+  background-color: #94d0cc;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 10px;
+}
+
+.servicios h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.servicios h3 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.servicios div img {
+  width: 100%;
+  height: 45vh;
+  border-top-right-radius: 15px;
+}
+
+.servicios div a {
+  font-size: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+.servicios div p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-clases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjteta-entrevista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta-entrevista p {
+  padding-bottom: 2rem;
+}
+
+/*CUARTA SECCION*/
+.viajeros {
+  grid-area: seccion-cuatro;
+}
+
+.viajeros img {
+  width: 400px;
+}
+
+.viajeros div {
+  text-align: center;
+  margin-left: 28px;
+}
+
+.viajeros div h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 50px;
+}
+
+.viajeros div p {
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 30px;
+}
+
+/*BOTON*/
+
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  border-radius: 15px;
+  color: black;
+  background-color: #f1c5c5;
+  margin: 10px;
+  padding: 8px;
+  width: 100px;
+  height: 50px;
+}
+.boton:hover {
+  transition: 0.5s;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  border-radius: 15px;
+  color: black;
+  background-color: #f38ba0;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #f29191;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  grid-area: footer;
+}
+
+.footer img {
+  width: 80px;
+}
+
+.footer h3 {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 30px;
+}
+
+.footer h4 {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 10px;
+}
+
+/*CONTACTO FORMULARIO*/
+
+.formulario {
+  height: 74vh;
+  background-color: #edf6e5;
+}
+
+.formulario fieldset {
+  margin: 25px;
+  border: none;
+  margin: 20px 75vh;
+}
+.formulario h2 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 6px;
+  margin: 6px 0;
+  border: none;
+  border-bottom: 3px solid #425858;
+  background: transparent;
+}
+
+.formulario input:focus {
+  background: linear-gradient(to bottom, transparent, #ced6c7);
+  outline: none;
+}
+
+.formulario textarea {
+  min-height: 120px;
+  width: 100%;
+  background-color: #edf6e5;
+  resize: none;
+  border: none;
+  border-bottom: 3px solid #425858;
+  background: transparent;
+}
+
+.formulario textarea:focus {
+  background: linear-gradient(to bottom, transparent, #ced6c7);
+  outline: none;
+}
+
+/*NOSOTROS*/
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 150px auto auto;
+  grid-template-areas: "box0 box0" "box1 box1" "box2 box3" "box4 box5";
+  background-color: #edf6e5;
+}
+
+.arriba-arriba {
+  grid-area: box0;
+}
+
+.arriba-medio {
+  grid-area: box1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arriba-izquierda {
+  grid-area: box2;
+  padding-left: 25px;
+}
+
+.arriba-derecha {
+  grid-area: box3;
+  padding-right: 45px;
+}
+
+.abajo-izquierda {
+  grid-area: box4;
+  padding-left: 25px;
+}
+
+.abajo-derecha {
+  grid-area: box5;
+  padding-right: 45px;
+}
+
+.nosotros {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nosotros-fondo-portada {
+  height: 50vh;
+  width: 90%;
+  background: url(/images/portada_nosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.nosotros h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.nosotros p {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+  margin: 30px;
+}
+
+.nosotros__items {
+  font-family: "Playfair Display", serif;
+}
+
+.nosotros__items h3 {
+  font-size: 28px;
+  color: #f38ba0;
+}
+
+.nosotros__items img {
+  width: 100px;
+  height: 100px;
+}
+
+/*VIAJEROS*/
+
+.viajeros {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.viajeros img {
+  margin: 45px;
+}
+
+.viajeros__principal__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf6e5;
+}
+
+.viajeros div {
+}
+
+.viajeros__principal {
+  width: 100%;
+  height: 100vh;
+}
+
+.viajeros__principal h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.viajeros__principal p {
+  width: 50%;
+  margin-left: 20px;
+  align-self: flex-start;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.viajeros__principal iframe {
+}
+
+/*FAQs*/
+
+.preguntas__frec {
+  width: 100%;
+  background-color: #edf6e5;
+}
+
+.preguntas__frec h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.preguntas__frec p {
+  font-family: "Playfair Display", serif;
+  text-align: justify;
+  font-size: 20px;
+  margin: 18px;
+  display: inline-block;
+}
+
+/*------PREGUNTAS------*/
+
+.contenedor-preguntas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 40px;
+}
+
+.contenedor-pregunta {
+  padding: 40px;
+  background: #f1c5c5;
+  border: 2px solid #f38ba0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease all;
+}
+
+.contenedor-pregunta.activa {
+  border: 2px solid #f38ba0;
+}
+
+.pregunta {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pregunta img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.respuesta {
+  line-height: 30px;
+  opacity: 0;
+  transition: 0.5s ease all;
+}
+.contenedor-pregunta img:active ~ .respuesta {
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/*CLASES*/
+
+.clases {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, 250px);
+  row-gap: 25pxpx;
+}
+.clases h2 {
+  display: inline-block;
+  color: #709b98;
+  font-family: "Playfair Display", serif;
+  margin: 15px;
+  padding-top: 20px;
+  margin-left: 50px;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.clases p {
+  display: inline-block;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin: 15px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.clases div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clases div img {
+  width: 100px;
+  margin-left: 30px;
+}
+
+.clase div {
+  width: auto;
+}
+
+.segunda-lengua {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: #edf6e5;
+}
+.conversacion {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: #edf6e5;
+}
+.preparacion-examen {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: #edf6e5;
+}
+.clase-online {
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: #edf6e5;
+}
+
+/*SUBTITULOS*/
+
+.subtitulos {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+
+.subtitulos h2 {
+  display: inline-block;
+  color: #709b98;
+  font-family: "Playfair Display", serif;
+  margin: 15px;
+  padding-top: 20px;
+  margin-left: 50px;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.subtitulos p {
+  display: inline-block;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin: 15px 80px;
+  font-size: 20px;
+}
+
+/*----TABLET----*/
+
+@media screen and (max-width: 768px) {
+  .body-principal {
+    background-color: #edf6e5;
+    /*display: grid;
+    grid-template-rows: 150px 1fr 1fr 1fr 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "encabezado"
+      "seccion-uno"
+      "seccion-dos"
+      "seccion-tres"
+      "seccion-cuatro"
+      "footer";*/
+    width: 100%;
+    height: 100%;
+  }
+  /*SECCION DOS TABLET*/
+  .seccion__dos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: seccion-dos;
+  }
+
+  .seccion__dos img {
+    width: 300px;
+    margin: 25px;
+  }
+
+  .seccion__dos div {
+    text-align: center;
+    margin-right: 25px;
+  }
+
+  .seccion__dos div h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .seccion__dos div p {
+    font-family: "EB Garamond", serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px;
+    text-align: justify;
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
+
+  /*SECCION TRES TABLET*/
+
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /*SECCION CUATRO TABLET*/
+
+  .viajeros {
+    display: flex;
+  }
+
+  .viajeros img {
+    width: 300px;
+  }
+
+  .viajeros div {
+    text-align: center;
+    margin-left: 28px;
+  }
+
+  .viajeros div h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 50px;
+  }
+
+  .viajeros div p {
+    font-family: "EB Garamond", serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 25px;
+  }
+
+  .footer {
+  }
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 320px) {
+  .body-principal {
+    background-color: #edf6e5;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "encabezado" "seccion-uno" "seccion-dos" "seccion-dos" "seccion-tres" "seccion-tres" "seccion-tres" "seccion-tres" "seccion-cuatro" "seccion-cuatro" "footer";
+  }
+
+  /*NAV MOBILE*/
+  .encabezado {
+    background-color: #f29191;
+    height: auto;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    grid-area: encabezado;
+  }
+
+  /*SECCION UNO MOBILE*/
+
+  .seccion__uno h2 {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .seccion__uno h3 {
+    color: white;
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    align-self: flex-end;
+    margin-bottom: 175px;
+    padding-right: 50px;
+  }
+
+  /*SECCION DOS MOBILE*/
+  .seccion__dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-area: seccion-dos;
+  }
+
+  .seccion__dos img {
+    width: 0;
+    margin: 10px;
+  }
+
+  .seccion__dos div {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seccion__dos div h2 {
+    font-size: 15px;
+    font-family: "Playfair Display", serif;
+  }
+
+  .seccion__dos div p {
+    font-family: "EB Garamond", serif;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 5px;
+    text-align: justify;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    align-self: flex-end;
+  }
+
+  /*SECCION TRES MOBILE*/
+
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /*SECCION CUATRO MOBILE*/
+
+  .viajeros {
+    display: flex;
+  }
+
+  .viajeros img {
+    width: 0;
+  }
+
+  .viajeros div {
+    text-align: center;
+    margin-left: 28px;
+  }
+
+  .viajeros div h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 50px;
+  }
+
+  .viajeros div p {
+    font-family: "EB Garamond", serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 25px;
+  }
+}
