@@ -156,6 +156,7 @@ body {
 .div-servicios {
   grid-area: seccion-tres;
 }
+
 #div-servicios h2 {
   display: flex;
   justify-content: center;
@@ -214,12 +215,18 @@ body {
 .servicios div p {
   text-align: center;
   margin-bottom: 1rem;
+  font-family: "EB Garamond", serif;
 }
 
 .tarjeta-clases {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.tarjeta-clases a {
+  position: relative;
+  bottom: 20px;
 }
 
 .tarjteta-entrevista {
@@ -662,7 +669,8 @@ body {
   font-size: 20px;
 }
 
-/*----TABLET----*/
+/*-----------------------------     ------------------------------------
+------------------------------TABLET------------------------------------*/
 
 @media screen and (max-width: 768px) {
   .body-principal {
@@ -758,7 +766,8 @@ body {
   }
 }
 
-/*MOBILE*/
+/*----------------------------------MOBILE----------------------------------
+----------------------------------------------------------------------------*/
 
 @media screen and (max-width: 320px) {
   .body-principal {
