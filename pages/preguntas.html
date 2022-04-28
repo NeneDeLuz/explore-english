@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
@@ -51,7 +52,186 @@
       </p>
 
       <!--Aca quiero hacer unas preguntas y que tengan un boton que cuando lo toco se despliegue la respuesta para abajo.-->
-      <div class="preguntas">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              ¿Explore English es una academia?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Explore english es un espacio de enseñanaza particular, por eso
+              las clases son individuales o de grupos reducidos con un máximo de
+              6 alumnos por clase. Por esta misma razón el precio no es el mismo
+              que en una academia de inglés y los horarios dependen de la
+              disponibilidad de la profesora que es una sola para todos los
+              alumnos. Es una institución no formal, pero con un excelente
+              nivel, formación y profesionalismo. Estamos activos desde hace 4
+              años, con los mejores resultados.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              ¿En donde se dictan las clases?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Las clases se dictan en el domicilio de la profesora o de manera
+              online. Actualmente el 90% de nuestras clases están siendo online
+              por motivos de público conocimiento, pero muchos alumnos siguen
+              prefieriendo online aunque se haya abierto la posibilidad
+              presencial.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Si no asisto a una clase, ¿también me cobran?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Si no se asistirá a una clase en particular hay que avisar con una
+              semana de anticipación para que la clase pueda trasladarse a otra
+              fecha. Si la inasistencia no fue notificada con esta anticipación
+              se descontará de las clases del mes. En caso de que la profesora
+              cancele una clase, se recuperará dentro de los horarios
+              dsiponibles en agenda sin excepción y dentro del mes en curso, si
+              el alumno no puede perderá la clase.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              ¿Las clases incluyen material?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Ninguna clase incluye material. Cualquier tipo de material
+              entregado físicamente se deberan abonar. Se dirá cual es el libro
+              que deberan comprar o fotocopiar para el curso, siempre será
+              material elegido por la profesora de acuerdo a las necesidades de
+              cada alumno. Lo elementos enviados por mail, es decir
+              materialdigital, no será cobrado.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              ¿Puedo pagar en 2 o mas cuotas?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              No. Las clases de abonan por completo el día de inicio o en su
+              defecto la clase siguiente. No hay cuotas ni se puede pagar en
+              partes. De no contar con todo el dinero al momento de pago, el
+              alumno puede optar por Mercado Pago.
+            </div>
+          </div>
+        </div> 
+          <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              Si necesito un repaso pero tengo un buen nivel, ¿Que clase me
+              conviene tomar?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Si tu nivel es pre-intermedio o intermedio y necesitas un repaso
+              en todas las áreas recomiendo clases de inglés pre-intermedio. El
+              material está pensado para que puedas reconocer grámatica
+              previamente aprendida y secciones de conversación para retomar
+              fluídez. En caso de tener fecha limite de aprendizaje por viaje se
+              recomienda de converación con libro específico, siempre y cuando
+              el alumno cuente con un nivel minimo B1.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="preguntas">
         <div class="contenedor-preguntas">
           <div class="contenedor-pregunta">
             <p class="pregunta">¿Explore English es una academia?</p>
@@ -151,7 +331,8 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> -->
+
     <script src="/js/preguntasfrecuentes.js"></script>
     <footer class="footer">
       <div>
@@ -201,5 +382,6 @@
         <h4>Copyright- Todos los derechos reservados</h4>
       </div>
     </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

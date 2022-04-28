@@ -1,8 +1,9 @@
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+}*/
+
 /*  font-family: 'Playfair Display', serif;         h2
     font-family: 'Playfair Display SC', serif;
     font-family: "EB Garamond", serif;              p
@@ -57,7 +58,7 @@ body {
 }
 
 .encabezado nav ul li {
-  width: 20%;
+  width: auto;
   position: relative;
   margin: 15px;
 }
@@ -368,7 +369,7 @@ body {
 }
 
 /*NOSOTROS*/
-
+/*
 .nosotros {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -377,10 +378,11 @@ body {
   background-color: #edf6e5;
 }
 
+
 .arriba-arriba {
   grid-area: box0;
 }
-
+*/
 .arriba-medio {
   grid-area: box1;
   display: flex;
@@ -420,8 +422,7 @@ body {
   background: url(/images/portada_nosotros.jpg);
   background-size: cover;
   background-position: center;
-  margin-left: 50px;
-  margin-top: 50px;
+  margin: 40px 80px;
 }
 
 .nosotros h2 {
@@ -448,10 +449,9 @@ body {
   font-size: 28px;
   color: #f38ba0;
 }
-
 .nosotros__items img {
-  width: 100px;
-  height: 100px;
+  width: 9rem;
+  height: 9rem;
 }
 
 /*VIAJEROS*/
@@ -531,7 +531,25 @@ body {
 
 /*------PREGUNTAS------*/
 
-.contenedor-preguntas {
+.accordion-item {
+  background-color: #f29191;
+  margin: 20px 0;
+  border: 2px solid #f38ba0;
+}
+
+.accordion-item button {
+  font-size: 25px;
+}
+
+.accordion-button {
+  background-color: #f29191;
+}
+
+.accordion-button .true {
+  background-color: #f29191; /*ESTO SE QUE ESTA MAL PERO NO SE COMO HACERLO*/
+}
+
+/*.contenedor-preguntas {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -574,6 +592,7 @@ body {
   opacity: 1;
   margin-top: 20px;
 }
+*/
 
 /*CLASES*/
 
@@ -671,11 +690,11 @@ body {
 
 /*-----------------------------     ------------------------------------
 ------------------------------TABLET------------------------------------*/
-
+/*
 @media screen and (max-width: 768px) {
   .body-principal {
     background-color: #edf6e5;
-    /*display: grid;
+    display: grid;
     grid-template-rows: 150px 1fr 1fr 1fr 150px;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -684,12 +703,13 @@ body {
       "seccion-dos"
       "seccion-tres"
       "seccion-cuatro"
-      "footer";*/
+      "footer";
     width: 100%;
     height: 100%;
-  }
-  /*SECCION DOS TABLET*/
-  .seccion__dos {
+  } */
+
+/*SECCION DOS TABLET*/
+/*.seccion__dos {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -721,9 +741,9 @@ body {
     margin: 20px 0;
     padding-bottom: 20px;
   }
-
-  /*SECCION TRES TABLET*/
-
+*/
+/*SECCION TRES TABLET*/
+/*
   .servicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -731,9 +751,9 @@ body {
     justify-items: center;
     align-items: center;
   }
-
-  /*SECCION CUATRO TABLET*/
-
+*/
+/*SECCION CUATRO TABLET*/
+/*
   .viajeros {
     display: flex;
   }
@@ -765,10 +785,10 @@ body {
   .footer {
   }
 }
-
+*/
 /*----------------------------------MOBILE----------------------------------
 ----------------------------------------------------------------------------*/
-
+/*
 @media screen and (max-width: 320px) {
   .body-principal {
     background-color: #edf6e5;
@@ -779,8 +799,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "encabezado" "seccion-uno" "seccion-dos" "seccion-dos" "seccion-tres" "seccion-tres" "seccion-tres" "seccion-tres" "seccion-cuatro" "seccion-cuatro" "footer";
   }
-
-  /*NAV MOBILE*/
+*/
+/*NAV MOBILE*/
+/*
   .encabezado {
     background-color: #f29191;
     height: auto;
@@ -791,9 +812,9 @@ body {
     overflow: hidden;
     grid-area: encabezado;
   }
-
-  /*SECCION UNO MOBILE*/
-
+*/
+/*SECCION UNO MOBILE*/
+/*
   .seccion__uno h2 {
     display: inline-block;
     color: white;
@@ -811,8 +832,9 @@ body {
     margin-bottom: 175px;
     padding-right: 50px;
   }
-
-  /*SECCION DOS MOBILE*/
+*/
+/*SECCION DOS MOBILE*/
+/*
   .seccion__dos {
     display: flex;
     flex-direction: column;
@@ -848,9 +870,9 @@ body {
     padding-bottom: 20px;
     align-self: flex-end;
   }
-
-  /*SECCION TRES MOBILE*/
-
+*/
+/*SECCION TRES MOBILE*/
+/*
   .servicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -858,9 +880,9 @@ body {
     justify-items: center;
     align-items: center;
   }
-
-  /*SECCION CUATRO MOBILE*/
-
+*/
+/*SECCION CUATRO MOBILE*/
+/*
   .viajeros {
     display: flex;
   }
@@ -889,3 +911,4 @@ body {
     margin: 25px;
   }
 }
+*/
